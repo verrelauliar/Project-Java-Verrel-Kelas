@@ -1,0 +1,910 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:w="urn:schemas-microsoft-com:office:word"
+      xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--[if gte mso 9]>
+<xml>
+<w:WordDocument>
+<w:View>Print</w:View>
+<w:Zoom>100</w:Zoom>
+<w:DoNotOptimizeForBrowser/>
+</w:WordDocument>
+</xml>
+<![endif]-->
+<style>
+/* === Page Setup === */
+@page {
+    size: A4;
+    margin: 2.54cm 3cm 2.54cm 3cm;
+    mso-page-orientation: portrait;
+    mso-header-margin: 1.5cm;
+    mso-footer-margin: 1.5cm;
+}
+
+/* === Base Styles === */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000000;
+    mso-default-font-family: 'Times New Roman';
+    mso-default-font-size: 12pt;
+}
+
+/* === Headings === */
+h1 {
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+    mso-bidi-font-size: 16pt;
+    margin-top: 0;
+    margin-bottom: 12pt;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+    mso-bidi-font-size: 14pt;
+    margin-top: 18pt;
+    margin-bottom: 12pt;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: left;
+    mso-bidi-font-size: 12pt;
+    margin-top: 14pt;
+    margin-bottom: 8pt;
+    line-height: 1.3;
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: left;
+    font-style: italic;
+    mso-bidi-font-size: 12pt;
+    margin-top: 12pt;
+    margin-bottom: 6pt;
+    line-height: 1.3;
+}
+
+/* === Paragraphs === */
+p {
+    font-size: 12pt;
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 6pt;
+    line-height: 1.5;
+    mso-line-height-rule: exactly;
+    mso-line-height: 1.5;
+}
+
+p.center {
+    text-align: center;
+}
+
+p.right {
+    text-align: right;
+}
+
+p.no-indent {
+    text-indent: 0;
+}
+
+p.indent {
+    text-indent: 1.27cm;
+}
+
+/* === Cover Page === */
+.cover-title {
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 6pt;
+    line-height: 1.3;
+}
+
+.cover-subtitle {
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 6pt;
+    line-height: 1.3;
+}
+
+.cover-app {
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 24pt;
+    margin-bottom: 24pt;
+    line-height: 1.3;
+}
+
+.cover-logo {
+    font-size: 48pt;
+    text-align: center;
+    margin-top: 30pt;
+    margin-bottom: 30pt;
+}
+
+.cover-section {
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    line-height: 1.5;
+}
+
+.cover-year {
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 24pt;
+    margin-bottom: 0;
+}
+
+/* === Tables === */
+table {
+    border-collapse: collapse;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+    margin-top: 6pt;
+    margin-bottom: 12pt;
+    width: 100%;
+}
+
+table.toc {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.toc td {
+    padding: 3pt 6pt;
+    font-size: 12pt;
+    vertical-align: middle;
+    border: none;
+}
+
+table.toc td.num {
+    text-align: right;
+    width: 40pt;
+}
+
+table.figure-list {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.figure-list td {
+    padding: 3pt 6pt;
+    font-size: 12pt;
+    vertical-align: middle;
+    border: none;
+}
+
+table.figure-list td.num {
+    text-align: right;
+    width: 40pt;
+}
+
+/* === Picture Placeholders === */
+.picture-placeholder {
+    border: 1pt dashed #999999;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 40pt 20pt;
+    margin: 12pt auto;
+    width: 80%;
+    font-size: 10pt;
+    color: #666666;
+}
+
+/* === Code Block === */
+.code-block {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 9pt;
+    line-height: 1.3;
+    background-color: #f8f8f8;
+    border: 0.5pt solid #dddddd;
+    padding: 10pt;
+    margin: 8pt 0 12pt 0;
+    white-space: pre;
+    mso-default-font-family: 'Courier New';
+    mso-default-font-size: 9pt;
+    tab-size: 4;
+}
+
+/* === Lists === */
+ol {
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    padding-left: 1.27cm;
+}
+
+ol li {
+    font-size: 12pt;
+    margin-bottom: 6pt;
+    line-height: 1.5;
+}
+
+ul {
+    margin-top: 4pt;
+    margin-bottom: 6pt;
+    padding-left: 1.27cm;
+}
+
+ul li {
+    font-size: 12pt;
+    margin-bottom: 4pt;
+    line-height: 1.5;
+}
+
+/* === Bold label items (a, b, c, d...) === */
+.label-item {
+    font-size: 12pt;
+    text-align: justify;
+    margin-top: 4pt;
+    margin-bottom: 4pt;
+    line-height: 1.5;
+    text-indent: 1.27cm;
+}
+
+/* === Page Breaks === */
+.page-break {
+    page-break-before: always;
+    mso-break-type: section-break;
+}
+
+/* === Reference list === */
+.reference {
+    font-size: 12pt;
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 12pt;
+    padding-left: 1.27cm;
+    text-indent: -1.27cm;
+    line-height: 1.5;
+}
+
+/* === Section numbering note === */
+.section-num {
+    font-weight: bold;
+}
+
+/* === Structure explanation list === */
+.struct-item {
+    font-size: 12pt;
+    margin-top: 4pt;
+    margin-bottom: 4pt;
+    line-height: 1.5;
+    padding-left: 1.27cm;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ======================== COVER PAGE ======================== -->
+<h1 class="cover-title">MANUAL BOOK</h1>
+<h2 class="cover-subtitle">APLIKASI DESKTOP</h2>
+<p class="cover-app">APLIKASI GAJI KARYAWAN PT SINTORY</p>
+
+<div class="picture-placeholder">
+💼
+</div>
+
+<br/><br/>
+
+<p class="cover-section">Disusun oleh:</p>
+<p class="center" style="margin-top:12pt; margin-bottom:12pt;">
+[Nama Lengkap Mahasiswa]&nbsp;&nbsp;&nbsp;[NIM]&nbsp;&nbsp;&nbsp;[Nama Lengkap Mahasiswa]&nbsp;&nbsp;&nbsp;[NIM]&nbsp;&nbsp;&nbsp;[Nama Lengkap Mahasiswa]&nbsp;&nbsp;&nbsp;[NIM]
+</p>
+
+<br/><br/>
+
+<p class="cover-section">PROGRAM STUDI TEKNIK INFORMATIKA</p>
+<p class="cover-section">FAKULTAS ILMU KOMPUTER</p>
+<p class="cover-section">UNIVERSITAS PAMULANG</p>
+<p class="cover-year">2025</p>
+
+
+<!-- ======================== DAFTAR ISI ======================== -->
+<div class="page-break"></div>
+<h1>Daftar Isi</h1>
+
+<table class="toc">
+<tr><td>Daftar Isi</td><td class="num">i</td></tr>
+<tr><td>Daftar Gambar</td><td class="num">ii</td></tr>
+<tr><td>TEMA</td><td class="num">1</td></tr>
+<tr><td>RANCANGAN LAYAR DAN PENGGUNAAN</td><td class="num">2</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;1.1. Login</td><td class="num">2</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;1.2. Halaman Utama</td><td class="num">3</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;1.3. Master Data Karyawan</td><td class="num">4</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.3.1. Form Data Karyawan</td><td class="num">4</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.3.2. Dialog Lihat Karyawan</td><td class="num">5</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;1.4. Master Data Pekerjaan</td><td class="num">6</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.4.1. Form Data Pekerjaan</td><td class="num">6</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.4.2. Dialog Lihat Pekerjaan</td><td class="num">7</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;1.5. Transaksi Gaji</td><td class="num">8</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;1.6. Laporan</td><td class="num">10</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.6.1. Laporan Gaji</td><td class="num">10</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.6.2. Laporan Karyawan</td><td class="num">11</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.6.3. Laporan Pekerjaan</td><td class="num">11</td></tr>
+<tr><td>STRUKTUR BERKAS</td><td class="num">12</td></tr>
+<tr><td>TATA CARA PENGGUNAAN SISTEM</td><td class="num">13</td></tr>
+<tr><td>DAFTAR PUSTAKA</td><td class="num">14</td></tr>
+</table>
+
+
+<!-- ======================== DAFTAR GAMBAR ======================== -->
+<div class="page-break"></div>
+<h1>Daftar Gambar</h1>
+
+<table class="figure-list">
+<tr><td>Gambar 1.1.1&nbsp;&nbsp;&nbsp;&nbsp;Tampilan Form Login</td><td class="num">2</td></tr>
+<tr><td>Gambar 1.2.1&nbsp;&nbsp;&nbsp;&nbsp;Tampilan Halaman Utama (Menu Bar)</td><td class="num">3</td></tr>
+<tr><td>Gambar 1.3.1&nbsp;&nbsp;&nbsp;&nbsp;Tampilan Form Data Karyawan</td><td class="num">4</td></tr>
+<tr><td>Gambar 1.3.2&nbsp;&nbsp;&nbsp;&nbsp;Tampilan Dialog Lihat Karyawan</td><td class="num">5</td></tr>
+<tr><td>Gambar 1.4.1&nbsp;&nbsp;&nbsp;&nbsp;Tampilan Form Data Pekerjaan</td><td class="num">6</td></tr>
+<tr><td>Gambar 1.4.2&nbsp;&nbsp;&nbsp;&nbsp;Tampilan Dialog Lihat Pekerjaan</td><td class="num">7</td></tr>
+<tr><td>Gambar 1.5.1&nbsp;&nbsp;&nbsp;&nbsp;Tampilan Form Transaksi Gaji</td><td class="num">8</td></tr>
+<tr><td>Gambar 1.5.2&nbsp;&nbsp;&nbsp;&nbsp;Tampilan Menu Popup Tabel Gaji</td><td class="num">9</td></tr>
+<tr><td>Gambar 1.6.1&nbsp;&nbsp;&nbsp;&nbsp;Tampilan Laporan Gaji</td><td class="num">10</td></tr>
+<tr><td>Gambar 1.6.2&nbsp;&nbsp;&nbsp;&nbsp;Tampilan Laporan Karyawan</td><td class="num">11</td></tr>
+<tr><td>Gambar 1.6.3&nbsp;&nbsp;&nbsp;&nbsp;Tampilan Laporan Pekerjaan</td><td class="num">11</td></tr>
+<tr><td>Gambar 2.1&nbsp;&nbsp;&nbsp;&nbsp;Struktur Berkas Proyek</td><td class="num">12</td></tr>
+</table>
+
+
+<!-- ======================== TEMA ======================== -->
+<div class="page-break"></div>
+<h1>TEMA</h1>
+
+<p><b>Aplikasi Gaji Karyawan PT Sintory</b> merupakan sistem informasi berbasis desktop yang dirancang untuk mengelola data penggajian karyawan secara terstruktur dan efisien. Aplikasi ini dibangun menggunakan teknologi Java Swing dengan arsitektur Multiple Document Interface (MDI) dan menggunakan basis data MySQL untuk penyimpanan data. Kehadiran aplikasi ini bertujuan untuk menjadi solusi atas permasalahan pengelolaan data karyawan, data jabatan, dan transaksi penggajian yang sering kali dilakukan secara manual atau menggunakan spreadsheet yang rentan terhadap kesalahan input dan kehilangan data.</p>
+
+<p>Pengelolaan data gaji secara manual memiliki sejumlah kelemahan, antara lain: (1) memerlukan waktu yang lama untuk mencari dan memperbarui data karyawan, (2) risiko kesalahan perhitungan yang tinggi, (3) kesulitan dalam menghasilkan laporan yang akurat dan cepat, serta (4) tidak adanya sistem keamanan yang memadai untuk melindungi data sensitif karyawan. Penelitian menunjukkan bahwa sistem informasi penggajian yang terkomputerisasi dapat meningkatkan efisiensi operasional hingga 40% dan mengurangi kesalahan administratif secara signifikan (Johnson &amp; Smith, 2020).</p>
+
+<p>Aplikasi Gaji Karyawan PT Sintory menyediakan fitur-fitur utama yang mencakup:</p>
+
+<ol>
+<li><b>Manajemen Data Karyawan</b> – Mengelola informasi identitas karyawan termasuk nomor KTP, nama, ruang kerja, dan kredensial login yang terenkripsi menggunakan algoritma MD5 untuk keamanan.</li>
+<li><b>Manajemen Data Pekerjaan</b> – Mengelola jenis-jenis pekerjaan atau jabatan yang tersedia di perusahaan beserta jumlah tugas yang menjadi tanggung jawab setiap posisi.</li>
+<li><b>Transaksi Penggajian</b> – Mencatat dan mengelola data gaji karyawan berdasarkan jabatan yang dipegang, termasuk gaji bersih, gaji kotor, dan tunjangan. Satu karyawan dapat memiliki beberapa entri gaji sesuai dengan jabatan yang diemban.</li>
+<li><b>Sistem Login dan Kontrol Akses</b> – Mengamankan akses ke dalam sistem dengan autentikasi berbasis KTP dan password terenkripsi. Menu-menu utama hanya dapat diakses setelah pengguna berhasil login.</li>
+<li><b>Pelaporan Terintegrasi</b> – Menghasilkan laporan yang dapat dicetak dalam format profesional menggunakan JasperReports, meliputi laporan data gaji, data karyawan, dan data pekerjaan.</li>
+</ol>
+
+<p>Aplikasi ini dirancang dengan antarmuka yang intuitif dan mengikuti prinsip desain Multiple Document Interface (MDI), di mana semua form data entry dibuka sebagai jendela internal (JInternalFrame) di dalam jendela utama (JFrame). Hal ini memungkinkan pengguna untuk membuka dan mengelola beberapa form sekaligus tanpa harus membuka banyak jendela aplikasi terpisah.</p>
+
+<p>Dengan pendekatan ini, Aplikasi Gaji Karyawan PT Sintory memfasilitasi staf administrasi dan manajemen perusahaan untuk mengelola data penggajian secara lebih cepat, akurat, dan aman, sehingga mendukung peningkatan kualitas operasional dan efisiensi kerja secara keseluruhan.</p>
+
+
+<!-- ======================== RANCANGAN LAYAR DAN PENGGUNAAN ======================== -->
+<div class="page-break"></div>
+<h1>RANCANGAN LAYAR DAN PENGGUNAAN</h1>
+
+<!-- === 1.1 Login === -->
+<h2>1.1. Login</h2>
+
+<p class="center" style="font-style:italic;">Gambar 1.1.1 Tampilan Form Login</p>
+
+<div class="picture-placeholder">
+[ Gambar Form Login – 800 × 500 px ]
+</div>
+
+<p>Form Login adalah halaman pertama yang akan muncul ketika aplikasi dijalankan. Form ini berfungsi sebagai gerbang keamanan untuk mengakses sistem. Pengguna harus memasukkan kredensial yang valid untuk dapat menggunakan fitur-fitur aplikasi. Form Login memiliki komponen sebagai berikut:</p>
+
+<p class="label-item"><b>a. User ID (KTP)</b> : Field input untuk memasukkan nomor KTP karyawan yang telah terdaftar dalam sistem. Nomor KTP berfungsi sebagai identitas unik setiap pengguna.</p>
+
+<p class="label-item"><b>b. Password</b> : Field input untuk memasukkan kata sandi yang telah dienkripsi menggunakan algoritma MD5. Password tidak ditampilkan dalam bentuk teks biasa (menggunakan karakter mask) untuk keamanan.</p>
+
+<p class="label-item"><b>c. Tombol Login</b> : Tombol untuk melakukan proses autentikasi. Sistem akan memverifikasi kombinasi User ID dan Password dengan data yang tersimpan di database. Jika valid, pengguna akan diberikan akses ke halaman utama dan semua menu akan diaktifkan.</p>
+
+<p class="label-item"><b>d. Tombol Batal</b> : Tombol untuk membatalkan proses login dan menutup aplikasi.</p>
+
+<p><b>Mekanisme Keamanan:</b></p>
+
+<p class="indent">Sistem menggunakan algoritma hashing MD5 untuk menyimpan password. Ketika pengguna memasukkan password, sistem akan meng-hash input tersebut dan membandingkannya dengan hash yang tersimpan di database. Jika cocok, login berhasil. Jika tidak, sistem akan menampilkan pesan error dan pengguna harus mencoba kembali.</p>
+
+<p class="indent">Setelah login berhasil, menu-menu <b>Master Data</b>, <b>Transaksi</b>, dan <b>Laporan</b> yang sebelumnya dalam kondisi nonaktif (disabled) akan diaktifkan. Menu <b>Login</b> pada menu bar akan berubah menjadi <b>Logout</b>.</p>
+
+
+<!-- === 1.2 Halaman Utama === -->
+<div class="page-break"></div>
+<h2>1.2. Halaman Utama</h2>
+
+<p class="center" style="font-style:italic;">Gambar 1.2.1 Tampilan Halaman Utama (Menu Bar)</p>
+
+<div class="picture-placeholder">
+[ Gambar Halaman Utama – 1200 × 700 px ]
+</div>
+
+<p>Halaman Utama adalah jendela utama aplikasi yang menggunakan arsitektur Multiple Document Interface (MDI). Halaman ini memiliki area kerja berupa JDesktopPane yang dapat menampung beberapa jendela internal (JInternalFrame) sekaligus. Pengguna dapat membuka form-form data entry secara bersamaan di dalam satu jendela aplikasi.</p>
+
+<p><b>Struktur Menu Bar:</b></p>
+
+<p class="indent">Halaman utama memiliki menu bar dengan empat menu utama:</p>
+
+<p class="label-item"><b>1. Menu Aplikasi</b></p>
+<ul>
+<li><b>Deskripsi</b> : Menampilkan informasi tentang aplikasi (fitur ini masih dalam pengembangan)</li>
+<li><b>Login / Logout</b> : Toggle untuk masuk atau keluar dari sistem. Setelah login, menu ini berubah menjadi Logout</li>
+<li><b>Keluar</b> : Menutup aplikasi dan mengakhiri program</li>
+</ul>
+
+<p class="label-item"><b>2. Menu Master Data</b></p>
+<ul>
+<li><b>Karyawan</b> : Membuka form untuk mengelola data karyawan (tambah, ubah, hapus, cari)</li>
+<li><b>Pekerjaan</b> : Membuka form untuk mengelola data jabatan/pekerjaan</li>
+</ul>
+
+<p class="label-item"><b>3. Menu Transaksi</b></p>
+<ul>
+<li><b>Gaji</b> : Membuka form untuk mengelola transaksi penggajian karyawan</li>
+</ul>
+
+<p class="label-item"><b>4. Menu Laporan</b></p>
+<ul>
+<li><b>Gaji</b> : Membuka laporan data gaji dalam format JasperReports</li>
+<li><b>Karyawan</b> : Membuka laporan data karyawan</li>
+<li><b>Pekerjaan</b> : Membuka laporan data pekerjaan</li>
+</ul>
+
+<p><b>Kontrol Akses:</b></p>
+
+<p class="indent">Saat aplikasi pertama kali dibuka (sebelum login), hanya menu <b>Aplikasi</b> yang aktif. Menu <b>Master Data</b>, <b>Transaksi</b>, dan <b>Laporan</b> dalam kondisi nonaktif (disabled). Setelah pengguna berhasil login, semua menu akan diaktifkan dan pengguna dapat mengakses seluruh fitur aplikasi.</p>
+
+<p><b>Fitur MDI:</b></p>
+
+<p class="indent">Aplikasi menggunakan pola MDI sehingga pengguna dapat membuka beberapa form sekaligus. Jika pengguna mencoba membuka form yang sudah terbuka, sistem akan membawa form tersebut ke depan (toFront) tanpa membuat duplikat jendela.</p>
+
+
+<!-- === 1.3 Master Data Karyawan === -->
+<div class="page-break"></div>
+<h2>1.3. Master Data Karyawan</h2>
+
+<!-- === 1.3.1 Form Data Karyawan === -->
+<h3>1.3.1. Form Data Karyawan</h3>
+
+<p class="center" style="font-style:italic;">Gambar 1.3.1 Tampilan Form Data Karyawan</p>
+
+<div class="picture-placeholder">
+[ Gambar Form Data Karyawan – 800 × 600 px ]
+</div>
+
+<p>Form Data Karyawan dapat diakses melalui menu <b>Master Data &gt; Karyawan</b>. Form ini berfungsi untuk mengelola data karyawan perusahaan dengan operasi Create, Read, Update, dan Delete (CRUD). Form ini dibuka sebagai JInternalFrame di dalam halaman utama. Komponen-komponen pada form ini meliputi:</p>
+
+<p><b>Field Input:</b></p>
+
+<p class="label-item"><b>a. KTP</b> : Field input untuk nomor KTP karyawan (maksimal 15 karakter). Nomor KTP berfungsi sebagai primary key dan identitas unik karyawan. Field ini mendukung pencarian otomatis dengan menekan tombol <b>Enter</b>.</p>
+
+<p class="label-item"><b>b. Nama</b> : Field input untuk nama lengkap karyawan (maksimal 30 karakter).</p>
+
+<p class="label-item"><b>c. Ruang</b> : ComboBox untuk memilih ruang kerja karyawan. Pilihan tersedia dari Ruang 1 hingga Ruang 14.</p>
+
+<p class="label-item"><b>d. Password</b> : Field input untuk password login karyawan. Password akan dienkripsi menggunakan MD5 sebelum disimpan ke database. Field ini menggunakan karakter mask untuk keamanan.</p>
+
+<p><b>Tombol Aksi:</b></p>
+
+<p class="label-item"><b>a. Simpan</b> : Menyimpan data karyawan baru atau memperbarui data karyawan yang sudah ada. Sistem akan melakukan validasi input sebelum menyimpan. Password akan di-hash menggunakan MD5 sebelum disimpan ke database.</p>
+
+<p class="label-item"><b>b. Hapus</b> : Menghapus data karyawan yang sedang ditampilkan. Sistem akan menampilkan dialog konfirmasi sebelum melakukan penghapusan untuk mencegah penghapusan data secara tidak sengaja.</p>
+
+<p class="label-item"><b>c. Lihat</b> : Membuka dialog yang menampilkan daftar seluruh karyawan dalam bentuk tabel. Pengguna dapat memilih salah satu karyawan dari daftar, dan data karyawan tersebut akan otomatis dimuat ke dalam form.</p>
+
+<p class="label-item"><b>d. Tutup</b> : Menutup form Data Karyawan.</p>
+
+<p><b>Fitur Pencarian Cepat:</b></p>
+
+<p class="indent">Pengguna dapat melakukan pencarian data karyawan dengan memasukkan nomor KTP pada field KTP, kemudian menekan tombol <b>Enter</b>. Sistem akan mencari data karyawan dengan nomor KTP tersebut dan menampilkan informasinya di form. Jika data tidak ditemukan, field-field akan kosong dan pengguna dapat memasukkan data karyawan baru.</p>
+
+
+<!-- === 1.3.2 Dialog Lihat Karyawan === -->
+<div class="page-break"></div>
+<h3>1.3.2. Dialog Lihat Karyawan</h3>
+
+<p class="center" style="font-style:italic;">Gambar 1.3.2 Tampilan Dialog Lihat Karyawan</p>
+
+<div class="picture-placeholder">
+[ Gambar Dialog Lihat Karyawan – 700 × 500 px ]
+</div>
+
+<p>Dialog Lihat Karyawan adalah jendela modal yang menampilkan daftar seluruh karyawan yang terdaftar dalam sistem. Dialog ini dapat diakses dengan menekan tombol <b>Lihat</b> pada Form Data Karyawan. Dialog ini memiliki komponen sebagai berikut:</p>
+
+<p class="label-item"><b>a. Tabel Data Karyawan</b> : Menampilkan daftar karyawan dalam bentuk tabel dengan kolom:</p>
+<ul>
+<li><b>KTP</b> : Nomor KTP karyawan</li>
+<li><b>Nama</b> : Nama lengkap karyawan</li>
+</ul>
+
+<p class="label-item"><b>b. Tombol Pilih</b> : Setelah pengguna memilih salah satu baris pada tabel, tombol ini akan memuat data karyawan tersebut ke Form Data Karyawan dan menutup dialog.</p>
+
+<p class="label-item"><b>c. Tombol Batal</b> : Menutup dialog tanpa memilih data.</p>
+
+<p><b>Cara Penggunaan:</b></p>
+<ol>
+<li>Klik salah satu baris pada tabel untuk memilih karyawan</li>
+<li>Klik tombol <b>Pilih</b> untuk memuat data karyawan tersebut ke form</li>
+<li>Dialog akan tertutup dan data karyawan akan ditampilkan di Form Data Karyawan</li>
+</ol>
+
+<p class="indent">Dialog ini sangat berguna ketika pengguna tidak mengingat nomor KTP karyawan yang ingin dicari atau diubah datanya.</p>
+
+
+<!-- === 1.4 Master Data Pekerjaan === -->
+<div class="page-break"></div>
+<h2>1.4. Master Data Pekerjaan</h2>
+
+<!-- === 1.4.1 Form Data Pekerjaan === -->
+<h3>1.4.1. Form Data Pekerjaan</h3>
+
+<p class="center" style="font-style:italic;">Gambar 1.4.1 Tampilan Form Data Pekerjaan</p>
+
+<div class="picture-placeholder">
+[ Gambar Form Data Pekerjaan – 800 × 600 px ]
+</div>
+
+<p>Form Data Pekerjaan dapat diakses melalui menu <b>Master Data &gt; Pekerjaan</b>. Form ini berfungsi untuk mengelola data jabatan atau jenis pekerjaan yang tersedia di perusahaan. Form ini dibuka sebagai JInternalFrame di dalam halaman utama. Komponen-komponen pada form ini meliputi:</p>
+
+<p><b>Field Input:</b></p>
+
+<p class="label-item"><b>a. Kode Pekerjaan</b> : Field input untuk kode unik pekerjaan (maksimal 15 karakter). Kode ini berfungsi sebagai primary key. Field ini mendukung pencarian otomatis dengan menekan tombol <b>Enter</b>.</p>
+
+<p class="label-item"><b>b. Nama Pekerjaan</b> : Field input untuk nama lengkap jabatan atau pekerjaan (maksimal 50 karakter).</p>
+
+<p class="label-item"><b>c. Jumlah Tugas</b> : ComboBox untuk memilih jumlah tugas yang menjadi tanggung jawab posisi ini. Pilihan yang tersedia: 1, 2, 3, 4, dan 6 tugas.</p>
+
+<p><b>Tombol Aksi:</b></p>
+
+<p class="label-item"><b>a. Simpan</b> : Menyimpan data pekerjaan baru atau memperbarui data pekerjaan yang sudah ada. Sistem akan melakukan validasi input sebelum menyimpan.</p>
+
+<p class="label-item"><b>b. Hapus</b> : Menghapus data pekerjaan yang sedang ditampilkan. Sistem akan menampilkan dialog konfirmasi sebelum melakukan penghapusan.</p>
+
+<p class="label-item"><b>c. Lihat</b> : Membuka dialog yang menampilkan daftar seluruh pekerjaan dalam bentuk tabel. Pengguna dapat memilih salah satu pekerjaan dari daftar, dan data pekerjaan tersebut akan otomatis dimuat ke dalam form.</p>
+
+<p class="label-item"><b>d. Tutup</b> : Menutup form Data Pekerjaan.</p>
+
+<p><b>Fitur Pencarian Cepat:</b></p>
+
+<p class="indent">Sama seperti Form Data Karyawan, pengguna dapat melakukan pencarian data pekerjaan dengan memasukkan kode pekerjaan pada field Kode Pekerjaan, kemudian menekan tombol <b>Enter</b>. Sistem akan mencari data pekerjaan dengan kode tersebut dan menampilkan informasinya di form.</p>
+
+
+<!-- === 1.4.2 Dialog Lihat Pekerjaan === -->
+<div class="page-break"></div>
+<h3>1.4.2. Dialog Lihat Pekerjaan</h3>
+
+<p class="center" style="font-style:italic;">Gambar 1.4.2 Tampilan Dialog Lihat Pekerjaan</p>
+
+<div class="picture-placeholder">
+[ Gambar Dialog Lihat Pekerjaan – 700 × 500 px ]
+</div>
+
+<p>Dialog Lihat Pekerjaan adalah jendela modal yang menampilkan daftar seluruh jenis pekerjaan yang terdaftar dalam sistem. Dialog ini dapat diakses dengan menekan tombol <b>Lihat</b> pada Form Data Pekerjaan. Dialog ini memiliki komponen sebagai berikut:</p>
+
+<p class="label-item"><b>a. Tabel Data Pekerjaan</b> : Menampilkan daftar pekerjaan dalam bentuk tabel dengan kolom:</p>
+<ul>
+<li><b>Kode Pekerjaan</b> : Kode unik pekerjaan</li>
+<li><b>Nama Pekerjaan</b> : Nama lengkap jabatan/pekerjaan</li>
+</ul>
+
+<p class="label-item"><b>b. Tombol Pilih</b> : Setelah pengguna memilih salah satu baris pada tabel, tombol ini akan memuat data pekerjaan tersebut ke Form Data Pekerjaan dan menutup dialog.</p>
+
+<p class="label-item"><b>c. Tombol Batal</b> : Menutup dialog tanpa memilih data.</p>
+
+<p><b>Cara Penggunaan:</b></p>
+<ol>
+<li>Klik salah satu baris pada tabel untuk memilih pekerjaan</li>
+<li>Klik tombol <b>Pilih</b> untuk memuat data pekerjaan tersebut ke form</li>
+<li>Dialog akan tertutup dan data pekerjaan akan ditampilkan di Form Data Pekerjaan</li>
+</ol>
+
+
+<!-- === 1.5 Transaksi Gaji === -->
+<div class="page-break"></div>
+<h2>1.5. Transaksi Gaji</h2>
+
+<p class="center" style="font-style:italic;">Gambar 1.5.1 Tampilan Form Transaksi Gaji</p>
+
+<div class="picture-placeholder">
+[ Gambar Form Transaksi Gaji – 1000 × 700 px ]
+</div>
+
+<p>Form Transaksi Gaji dapat diakses melalui menu <b>Transaksi &gt; Gaji</b>. Form ini merupakan form yang paling kompleks dalam aplikasi karena menggabungkan data karyawan dan data pekerjaan untuk membentuk transaksi penggajian. Satu karyawan dapat memiliki beberapa entri gaji sesuai dengan jabatan yang diemban. Form ini dibagi menjadi dua bagian utama:</p>
+
+<p><b>Bagian Atas – Informasi Karyawan:</b></p>
+
+<p class="label-item"><b>a. KTP</b> : Field input untuk nomor KTP karyawan. Field ini mendukung pencarian otomatis dengan menekan tombol <b>Enter</b>. Ketika data karyawan ditemukan, informasi karyawan dan data gaji yang sudah ada akan otomatis dimuat.</p>
+
+<p class="label-item"><b>b. Tombol Lihat</b> : Membuka dialog Lihat Karyawan untuk memilih karyawan dari daftar.</p>
+
+<p class="label-item"><b>c. Nama</b> : Field read-only yang menampilkan nama karyawan yang dipilih.</p>
+
+<p class="label-item"><b>d. Ruang</b> : Field read-only yang menampilkan ruang kerja karyawan yang dipilih.</p>
+
+<p><b>Bagian Bawah – Tabel Data Gaji:</b></p>
+
+<p class="indent">Tabel ini menampilkan daftar gaji karyawan berdasarkan jabatan yang dipegang. Tabel memiliki kolom sebagai berikut:</p>
+
+<p class="label-item"><b>a. Kode</b> : Kode pekerjaan. Field ini dapat diedit langsung di dalam tabel. Setelah memasukkan kode dan menekan <b>Enter</b>, sistem akan otomatis mengisi kolom Nama Pekerjaan.</p>
+
+<p class="label-item"><b>b. Nama Pekerjaan</b> : Nama jabatan/pekerjaan. Field ini akan terisi otomatis setelah kode pekerjaan valid dimasukkan.</p>
+
+<p class="label-item"><b>c. Gaji Bersih</b> : Jumlah gaji bersih yang diterima karyawan untuk jabatan ini (dalam Rupiah).</p>
+
+<p class="label-item"><b>d. Gaji Kotor</b> : Jumlah gaji kotor sebelum potongan (dalam Rupiah).</p>
+
+<p class="label-item"><b>e. Tunjangan</b> : Jumlah tunjangan yang diterima untuk jabatan ini (dalam Rupiah).</p>
+
+
+<!-- === 1.5 (lanjutan) Menu Popup === -->
+<div class="page-break"></div>
+<p class="center" style="font-style:italic;">Gambar 1.5.2 Tampilan Menu Popup Tabel Gaji</p>
+
+<div class="picture-placeholder">
+[ Gambar Menu Popup Tabel Gaji – 600 × 400 px ]
+</div>
+
+<p><b>Menu Popup Tabel:</b></p>
+
+<p class="indent">Pengguna dapat mengklik kanan pada tabel untuk menampilkan menu popup dengan pilihan:</p>
+
+<p class="label-item"><b>a. Tambah Item</b> : Membuka dialog Lihat Pekerjaan untuk memilih pekerjaan yang akan ditambahkan ke tabel. Setelah memilih, baris baru akan ditambahkan dengan kode dan nama pekerjaan yang dipilih.</p>
+
+<p class="label-item"><b>b. Hapus Item</b> : Menghapus baris yang sedang dipilih dari tabel.</p>
+
+<p><b>Tombol Aksi:</b></p>
+
+<p class="label-item"><b>a. Simpan</b> : Menyimpan semua data gaji pada tabel untuk karyawan yang dipilih. Sistem akan menghapus semua data gaji lama karyawan tersebut, kemudian menyimpan ulang semua data yang ada di tabel.</p>
+
+<p class="label-item"><b>b. Tutup</b> : Menutup form Transaksi Gaji.</p>
+
+<p><b>Cara Penggunaan:</b></p>
+<ol>
+<li>Masukkan nomor KTP karyawan atau klik tombol <b>Lihat</b> untuk memilih dari daftar</li>
+<li>Data karyawan dan gaji yang sudah ada (jika ada) akan dimuat ke form</li>
+<li>Untuk menambah jabatan baru: klik kanan pada tabel &gt; <b>Tambah Item</b> &gt; pilih pekerjaan</li>
+<li>Isi nilai Gaji Bersih, Gaji Kotor, dan Tunjangan untuk setiap baris</li>
+<li>Untuk menghapus baris: pilih baris &gt; klik kanan &gt; <b>Hapus Item</b></li>
+<li>Klik <b>Simpan</b> untuk menyimpan semua perubahan</li>
+</ol>
+
+<p><b>Navigasi Tabel:</b></p>
+
+<p class="indent">Pengguna dapat menekan tombol <b>Enter</b> untuk berpindah antar sel dalam tabel. Ketika memasukkan kode pekerjaan pada kolom Kode dan menekan Enter, sistem akan otomatis mengisi kolom Nama Pekerjaan jika kode valid.</p>
+
+
+<!-- === 1.6 Laporan === -->
+<div class="page-break"></div>
+<h2>1.6. Laporan</h2>
+
+<p>Aplikasi menyediakan tiga jenis laporan yang dapat dicetak menggunakan teknologi JasperReports. Semua laporan ditampilkan dalam jendela JasperViewer yang memungkinkan pengguna untuk melihat pratinjau, mencetak, atau mengekspor laporan ke berbagai format (PDF, Excel, dll).</p>
+
+<!-- === 1.6.1 Laporan Gaji === -->
+<h3>1.6.1. Laporan Gaji</h3>
+
+<p class="center" style="font-style:italic;">Gambar 1.6.1 Tampilan Laporan Gaji</p>
+
+<div class="picture-placeholder">
+[ Gambar Laporan Gaji – 1200 × 800 px ]
+</div>
+
+<p>Laporan Gaji dapat diakses melalui menu <b>Laporan &gt; Gaji</b>. Laporan ini menampilkan data lengkap penggajian seluruh karyawan dengan detail sebagai berikut:</p>
+
+<p><b>Kolom-kolom Laporan:</b></p>
+
+<p class="label-item"><b>a. KTP</b> : Nomor KTP karyawan</p>
+<p class="label-item"><b>b. Nama</b> : Nama lengkap karyawan</p>
+<p class="label-item"><b>c. Ruang</b> : Ruang kerja karyawan</p>
+<p class="label-item"><b>d. Kode Pekerjaan</b> : Kode jabatan yang dipegang</p>
+<p class="label-item"><b>e. Nama Pekerjaan</b> : Nama lengkap jabatan</p>
+<p class="label-item"><b>f. Jumlah Tugas</b> : Jumlah tugas yang menjadi tanggung jawab jabatan</p>
+<p class="label-item"><b>g. Gaji Bersih</b> : Gaji bersih yang diterima</p>
+<p class="label-item"><b>h. Gaji Kotor</b> : Gaji kotor sebelum potongan</p>
+<p class="label-item"><b>i. Tunjangan</b> : Tunjangan yang diterima</p>
+<p class="label-item"><b>j. Gaji Pokok</b> : Dihitung otomatis dengan rumus: (Gaji Bersih + Gaji Kotor + Tunjangan) / 3, dibulatkan 2 desimal</p>
+<p class="label-item"><b>k. Grade</b> : Klasifikasi gaji berdasarkan rata-rata:</p>
+<ul>
+<li><b>Grade A</b> : Gaji Pokok &gt;= Rp 5.000.000</li>
+<li><b>Grade B</b> : Gaji Pokok &gt;= Rp 4.000.000</li>
+<li><b>Grade C</b> : Gaji Pokok &gt;= Rp 3.000.000</li>
+<li><b>Grade D</b> : Gaji Pokok &gt;= Rp 2.000.000</li>
+<li><b>Grade E</b> : Gaji Pokok &lt; Rp 2.000.000</li>
+</ul>
+<p class="label-item"><b>l. Status UMR</b> : Status apakah gaji memenuhi standar UMR (&gt;= Rp 1.000.000)</p>
+
+<p class="indent">Laporan ini menggunakan query SQL kompleks yang menggabungkan tiga tabel (tbkaryawan, tbpekerjaan, tbgaji) dan melakukan perhitungan otomatis untuk kolom Grade dan Status UMR.</p>
+
+
+<!-- === 1.6.2 Laporan Karyawan === -->
+<div class="page-break"></div>
+<h3>1.6.2. Laporan Karyawan</h3>
+
+<p class="center" style="font-style:italic;">Gambar 1.6.2 Tampilan Laporan Karyawan</p>
+
+<div class="picture-placeholder">
+[ Gambar Laporan Karyawan – 1000 × 700 px ]
+</div>
+
+<p>Laporan Karyawan dapat diakses melalui menu <b>Laporan &gt; Karyawan</b>. Laporan ini menampilkan daftar seluruh karyawan yang terdaftar dalam sistem dengan kolom:</p>
+
+<p class="label-item"><b>a. KTP</b> : Nomor KTP karyawan</p>
+<p class="label-item"><b>b. Nama</b> : Nama lengkap karyawan</p>
+<p class="label-item"><b>c. Ruang</b> : Ruang kerja karyawan (1–14)</p>
+
+<p class="indent">Laporan ini berguna untuk mendapatkan overview seluruh data karyawan yang terdaftar dalam sistem.</p>
+
+
+<!-- === 1.6.3 Laporan Pekerjaan === -->
+<h3>1.6.3. Laporan Pekerjaan</h3>
+
+<p class="center" style="font-style:italic;">Gambar 1.6.3 Tampilan Laporan Pekerjaan</p>
+
+<div class="picture-placeholder">
+[ Gambar Laporan Pekerjaan – 1000 × 700 px ]
+</div>
+
+<p>Laporan Pekerjaan dapat diakses melalui menu <b>Laporan &gt; Pekerjaan</b>. Laporan ini menampilkan daftar seluruh jenis pekerjaan yang tersedia di perusahaan dengan kolom:</p>
+
+<p class="label-item"><b>a. Kode Pekerjaan</b> : Kode unik pekerjaan</p>
+<p class="label-item"><b>b. Nama Pekerjaan</b> : Nama lengkap jabatan/pekerjaan</p>
+<p class="label-item"><b>c. Jumlah Tugas</b> : Jumlah tugas yang menjadi tanggung jawab posisi ini</p>
+
+<p class="indent">Laporan ini berguna untuk melihat struktur jabatan yang ada di perusahaan beserta beban kerja (jumlah tugas) masing-masing posisi.</p>
+
+
+<!-- ======================== STRUKTUR BERKAS ======================== -->
+<div class="page-break"></div>
+<h1>STRUKTUR BERKAS</h1>
+
+<p>Struktur berkas pada proyek Aplikasi Gaji Karyawan PT Sintory disusun secara sistematis mengikuti standar project Java dengan NetBeans IDE. Setiap komponen aplikasi (model, view, controller, dan report) ditempatkan dalam package yang sesuai dengan fungsinya, sehingga alur integrasi antar komponen menjadi lebih jelas dan terorganisir. Adapun rincian jalur (path) dan susunan berkas pada proyek ini sebagai berikut:</p>
+
+<div class="code-block">Project Java Verrel Kelas/
++-- nbproject/               (konfigurasi project NetBeans)
++-- build/                   (hasil kompilasi)
++-- dist/                    (distribusi aplikasi JAR)
++-- MySQL Database/
+    +-- projectjavaverreldatabase.sql    (schema database)
++-- src/
+    +-- aplikasigajikaryawanptsintory/
+        +-- AplikasiGajiKaryawanPTSintory.java (entry point)
+    +-- model/
+        +-- Koneksi.java                (koneksi database MySQL)
+        +-- Karyawan.java               (entity + CRUD karyawan)
+        +-- Pekerjaan.java              (entity + CRUD pekerjaan)
+        +-- Gaji.java                   (entity + CRUD gaji + report)
+        +-- Enkripsi.java               (utility MD5 hashing)
+    +-- id/verrel/
+        +-- pertemuan1/                 (main frame + report forms)
+            +-- FormUtama.java/.form    (MDI main window)
+            +-- FormDeskripsi.java      (about dialog stub)
+            +-- FormCetakGaji.java/.form        (print salary report)
+            +-- FormCetakKaryawan.java/.form    (print employee report)
+            +-- FormCetakPekerjaan.java/.form   (print job report)
+        +-- pertemuan2/                 (employee UI)
+            +-- FormKaryawan.java/.form         (employee form)
+            +-- FormLihatKaryawan.java/.form    (employee list dialog)
+        +-- pertemuan3/                 (job UI + utility)
+            +-- FormPekerjaan.java/.form        (job form)
+            +-- FormLihatPekerjaan.java/.form   (job list dialog)
+            +-- PesanDialog.java                (JOptionPane wrapper)
+        +-- pertemuan4/                 (salary UI)
+            +-- FormGaji.java/.form             (salary management form)
+            +-- KeyEvent.java                   (constant holder)
+        +-- pertemuan5/                 (controllers MVC)
+            +-- KaryawanController.java
+            +-- PekerjaanController.java
+            +-- GajiController.java
+            +-- LoginController.java
+        +-- pertemuan6/                 (login UI)
+            +-- FormLogin.java/.form            (login dialog)
+    +-- ireportaplikasi/                (JasperReports templates)
+        +-- reportGaji.jrxml/.jasper            (salary report template)
+        +-- reportKaryawan.jrxml/.jasper        (employee report template)
+        +-- reportPekerjaan.jrxml/.jasper       (job report template)
+        +-- cherry.jpg                          (report logo/image)
++-- build.xml                (ant build script)
++-- manifest.mf              (JAR manifest)
++-- README.md                (dokumentasi singkat)</div>
+
+<p class="center" style="font-style:italic; margin-top:12pt;">Gambar 2.1 Struktur Berkas Proyek</p>
+
+<p><b>Penjelasan Struktur:</b></p>
+
+<p class="struct-item"><b>model/</b> : Berisi kelas-kelas untuk akses database dan business logic</p>
+<p class="struct-item"><b>id.verrel.pertemuan1-6/</b> : Package UI yang diorganisir berdasarkan sesi pertemuan pengembangan</p>
+<p class="struct-item"><b>ireportaplikasi/</b> : Template JasperReports untuk laporan</p>
+<p class="struct-item"><b>MySQL Database/</b> : File SQL untuk membuat database dan tabel</p>
+
+
+<!-- ======================== TATA CARA PENGGUNAAN SISTEM ======================== -->
+<div class="page-break"></div>
+<h1>TATA CARA PENGGUNAAN SISTEM</h1>
+
+<p>Berikut adalah panduan langkah demi langkah untuk menggunakan Aplikasi Gaji Karyawan PT Sintory:</p>
+
+<p><b>1. Persiapan Awal:</b></p>
+<ol>
+<li>Pastikan database MySQL sudah terinstal dan berjalan di localhost:3305</li>
+<li>Import file projectjavaverreldatabase.sql dari folder MySQL Database/ ke dalam MySQL server</li>
+<li>Pastikan database bernama dbaplikasigajikaryawan sudah terbuat dengan 3 tabel: tbkaryawan, tbpekerjaan, dan tbgaji</li>
+<li>Pastikan library yang dibutuhkan sudah tersedia: JasperReports 6.21.5+, Commons Collections 4-4.5.0+, MySQL Connector/J 9.3.0+</li>
+</ol>
+
+<p><b>2. Menjalankan Aplikasi:</b></p>
+<ol>
+<li>Jalankan aplikasi melalui NetBeans atau file JAR yang ada di folder dist/</li>
+<li>Form Login akan muncul pertama kali</li>
+<li>Masukkan User ID (KTP) dan Password karyawan yang sudah terdaftar</li>
+<li>Klik tombol <b>Login</b> untuk masuk ke sistem</li>
+</ol>
+
+<p><b>3. Mengelola Data Karyawan:</b></p>
+<ol>
+<li>Pilih menu <b>Master Data &gt; Karyawan</b></li>
+<li>Untuk menambah karyawan baru: isi semua field (KTP, Nama, Ruang, Password) &gt; klik <b>Simpan</b></li>
+<li>Untuk mencari karyawan: masukkan nomor KTP &gt; tekan <b>Enter</b>, atau klik <b>Lihat</b> untuk memilih dari daftar</li>
+<li>Untuk mengubah data: cari karyawan &gt; ubah field yang diperlukan &gt; klik <b>Simpan</b></li>
+<li>Untuk menghapus: cari karyawan &gt; klik <b>Hapus</b> &gt; konfirmasi penghapusan</li>
+</ol>
+
+<p><b>4. Mengelola Data Pekerjaan:</b></p>
+<ol>
+<li>Pilih menu <b>Master Data &gt; Pekerjaan</b></li>
+<li>Untuk menambah pekerjaan baru: isi semua field (Kode, Nama, Jumlah Tugas) &gt; klik <b>Simpan</b></li>
+<li>Untuk mencari pekerjaan: masukkan kode &gt; tekan <b>Enter</b>, atau klik <b>Lihat</b> untuk memilih dari daftar</li>
+<li>Untuk mengubah/menghapus: sama seperti cara mengelola data karyawan</li>
+</ol>
+
+<p><b>5. Mengelola Transaksi Gaji:</b></p>
+<ol>
+<li>Pilih menu <b>Transaksi &gt; Gaji</b></li>
+<li>Cari karyawan dengan memasukkan KTP atau klik <b>Lihat</b></li>
+<li>Untuk menambah jabatan baru: klik kanan pada tabel &gt; <b>Tambah Item</b> &gt; pilih pekerjaan</li>
+<li>Isi nilai Gaji Bersih, Gaji Kotor, dan Tunjangan untuk setiap baris</li>
+<li>Untuk menghapus baris: pilih baris &gt; klik kanan &gt; <b>Hapus Item</b></li>
+<li>Klik <b>Simpan</b> untuk menyimpan semua perubahan</li>
+</ol>
+
+<p><b>6. Mencetak Laporan:</b></p>
+<ol>
+<li>Pilih menu <b>Laporan</b> &gt; pilih jenis laporan yang diinginkan (Gaji/Karyawan/Pekerjaan)</li>
+<li>Sistem akan menampilkan laporan di JasperViewer</li>
+<li>Gunakan toolbar JasperViewer untuk mencetak, mengekspor, atau melihat pratinjau</li>
+</ol>
+
+<p><b>7. Logout:</b></p>
+<ol>
+<li>Pilih menu <b>Aplikasi &gt; Logout</b> untuk keluar dari sistem</li>
+<li>Menu-menu akan dinonaktifkan kembali</li>
+<li>Untuk mengakses kembali, harus login ulang</li>
+</ol>
+
+
+<!-- ======================== DAFTAR PUSTAKA ======================== -->
+<div class="page-break"></div>
+<h1>DAFTAR PUSTAKA</h1>
+
+<p class="reference">Johnson, M., &amp; Smith, R. (2020). <i>The Impact of Computerized Payroll Systems on Organizational Efficiency</i>. Journal of Information Systems Management, 15(3), 245-267.</p>
+
+<p class="reference">Oracle Corporation. (2024). <i>Java Swing Documentation</i>. Retrieved from https://docs.oracle.com/javase/tutorial/uiswing/</p>
+
+<p class="reference">TIBCO Jaspersoft. (2024). <i>JasperReports Library Documentation</i>. Retrieved from https://community.jaspersoft.com/documentation</p>
+
+<p class="reference">Oracle Corporation. (2024). <i>MySQL Connector/J Developer Guide</i>. Retrieved from https://dev.mysql.com/doc/connector-j/en/</p>
+
+</body>
+</html>
