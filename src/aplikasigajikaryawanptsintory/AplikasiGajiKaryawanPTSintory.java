@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package aplikasigajikaryawanptsintory;
-import id.verrel.pertemuan1.FormUtama;
+import id.verrel.main.FormUtama;
 
 /**
  *

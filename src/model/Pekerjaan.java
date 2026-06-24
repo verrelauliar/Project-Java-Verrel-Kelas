@@ -8,7 +8,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import id.verrel.pertemuan3.PesanDialog;
+import id.verrel.job.PesanDialog;
 
 /**
  *
